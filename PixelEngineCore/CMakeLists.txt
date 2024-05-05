@@ -54,7 +54,7 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 # Линковка с SFML
-target_link_libraries(${ENGINE_PROJECT_NAME} PRIVATE sfml-graphics)
+target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC sfml-graphics)
 
 # Копирование OpenAL DLL (если это необходимо)
 if(WIN32)
